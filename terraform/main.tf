@@ -41,7 +41,7 @@ module "vpc-east" {
   }
 
   source                           = "terraform-aws-modules/vpc/aws"
-  version                          = "v1.0"
+  version                          = "v1.67"
   name                             = "${random_id.environment_name.hex}-east"
   cidr                             = "10.0.0.0/16"
   azs                              = ["us-east-1a", "us-east-1b", "us-east-1c"]
